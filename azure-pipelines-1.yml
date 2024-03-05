@@ -23,7 +23,7 @@ jobs:
         fetchDepth: 0
 
       # Set Azure Devops CLI default settings
-      - bash: az devops configure --defaults organization='asingh1' project='NX Agents'
+      - bash: az devops configure --defaults organization='https://dev.azure.com/asingh1/' project='NX Agents'
         displayName: 'Set default Azure DevOps organization and project'
       # Get last successfull commit from Azure Devops CLI
       - bash: |
