@@ -23,6 +23,10 @@ export class ProductPriceElement extends HTMLElement {
     return '$' + (this.value / 100).toFixed(2);
   }
 
+  private get testPrice(): string {
+    return '$' + (this.value / 100).toFixed(2);
+  }
+
   get value(): number {
     return +this.getAttribute(ProductPriceElementAttribute.Value);
   }
